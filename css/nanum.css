@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+::selection{background: #fcc314;}
+
+/* header =============================================================================== */
+header{height: 180px;}
+header .logo{height: 200px;}
+header h1{position: relative; padding-top: 30px; }
+
+/* 네비게이션 */
+/* 1depth */
+header .gnb-nav{position: relative;}
+header .gnb-nav ul{position: absolute; left: 600px; top: -70px;}
+header .gnb-nav ul li{float: left; position: relative;}
+header .gnb-nav ul li a{display: block; position: relative; font-size: 18px; font-weight: bold; margin: 0 75px 10px; color:#295BA7; height: 40px; line-height: 40px;text-align: center; perspective: 500px;}
+
+header .sub-nav{}
+header .sub-nav ul{float: left; width: 100%; height: 95px; padding-top: 15px;}
+header .sub-nav ul li{}
+header .sub-nav ul li a{font-size: 16px; line-height: 24px; color:#295BA7; font-weight: bold;}
+
+/* 2depth */
+header .sub-nav .menu1{}
+header .sub-nav .menu1 li{}
+header .sub-nav .menu1 li a{}
+header .sub-nav .menu2{}
+header .sub-nav .menu2 li{}
+header .sub-nav .menu2 li a{}
+header .sub-nav .menu3{}
+header .sub-nav .menu3 li{}
+header .sub-nav .menu3 li a{}
+header .sub-nav .menu4{}
+header .sub-nav .menu4 li{}
+header .sub-nav .menu4 li a{}
+
+/* sns, 검색 */
+header .etc{position: absolute; right: 20px; top: 10px;}
+header .etc i{padding: 0 3px; left: 50px; font-size: 25px; right: 50px; color: #295BA7;}
+header .etc i:hover{color: rgba(41, 91, 167, 0.79);}
+header .search-form{width: 200px; height: 55px; display: none;}
+
+/* section ===================================================================================== */
+section{}
+/* slide */
+section .swiper-container.swiper2{height: 460px; margin-top: 30px; margin-bottom: 40px;}
+section .swiper-wrapper{width: 1200px;}
+section .swiper-slide{}
+section .swiper-button-next, .swiper-button-prev i{
+  font-size: 40px; color: #fff;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next, .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+  background-image: none;
+}
+section .swiper-slide img{height: 460px;}
+section .swiper-slide button{width: 150px; height: 50px; background: #fcc314; color: #fff;}
+
+/* category */
+section .category{width: 100%; height: 390px; background: #295ba7; margin-bottom: 60px;}
+section .sub-category{float: left;}
+section .sub-category h3{text-align: center; color: #fcc314; margin: 30px 10px; padding-bottom: 10px;}
+section .sub-category .one{border-bottom: solid #fcc314; margin-bottom: 30px;}
+section .sub-category .two{border-bottom: solid #fcc314; margin-bottom: 30px;}
+section .sub-category .three{border-bottom: solid #fcc314; margin-bottom: 30px;}
+section .sub-category .four{border-bottom: solid #fcc314; margin-bottom: 30px;}
+section .sub-category .five{border-bottom: solid #fcc314; margin-bottom: 30px;}
+section .sub-category li{line-height: 35px;}
+section .sub-category li a{color: #fcc314;}
+
+/* map */
+section .map h2{position: relative; padding-bottom: 20px; color: #94AC3C;}
+section .map .box{width: 310px; height: 300px; background: #94AC3C; position: absolute; float: left; z-index: 1;}
+section .map .box h3{padding-left: 30px; padding-top: 20px; color: #fff; font-size: 25px; font-weight: bold;}
+section .map .box p{padding: 25px; color: #fff;}
+section .map .area{position: relative; left: 45px; float: right;}
+section .map .area img{}
+section .map .area span.b{color: #4f4526;}
+section .map .area .circle1{position: absolute; left: 200px; top: -20px;  width: 110px; height: 110px; border-radius: 100px; background: #94ac3c;}
+section .map .area .circle1:hover{background: #829836; transition: 0.5s;}
+section .map .area .circle2:hover{background: #829836; transition: 0.5s;}
+section .map .area .circle1 p{padding-top: 13px; text-align: center; color: #fff; font-weight: bold;}
+section .map .area .circle1 p b{color: red;}
+section .map .area .circle2{position: absolute; left: 390px; top: 5px;  width: 110px; height: 110px; border-radius: 100px; background: #94ac3c;}
+section .map .area .circle2 p{padding-top: 13px; text-align: center; color: #fff; font-weight: bold;}
+section .map .area .circle2 p b{color: red;}
+
+/* 공지사항 */
+section .notice{padding-top: 40px; padding-bottom: 40px;}
+section .notice .not{width: 100%; height: 50px; border: 3px solid #295ba7;}
+section .notice .not p{float: left; color: #295ba7; font-size: 16px; font-weight: bold;}
+section .notice .not .not1{margin: 14px 20px;}
+section .notice .not .not2{float: right; margin: 14px 20px;}
+section .notice .not .text{margin: 14px 20px;}
+section .notice .not p a{padding: 0 5px; color: #295ba7;}
+
+/* 동영상 */
+section .player{position: relative; height: 500px; background: #295ba7;}
+section .player .center{overflow: hidden;}
+section .player h2{padding-top: 60px; color: #fff; padding-bottom: 20px;}
+section .player .play-wrap{float: left; width: 440px; height: 300px;}
+section .player .play-wrap.left{margin-right: 20px;}
+section .player .play-wrap iframe{width: 100%; height: 100%;}
+
+/* footer =============================================================================================== */
+footer .center{text-align: center; width: 100%; height: 400px;}
+footer .center .fot-nav{}
+footer .center .fot-nav li{margin-top: 70px; display: inline-block; padding: 10px 5px;}
+footer .center .fot-nav li a{color: #295ba7;}
+footer .center p{padding-top: 50px; padding-bottom: 30px; color: #295ba7;}
+footer .center small{color: #295ba7; font-weight: bold;}
