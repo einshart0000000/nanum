@@ -1,5 +1,17 @@
 @charset "UTF-8";
-
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/* commoon =============================================================================== */
+*{margin: 0; padding: 0;}
+a{text-decoration: none;}
+li{list-style: none;}
+img{max-width: 100%;}
+button{background: none; border:0; cursor: pointer;}
+html, body{height: 100%;}
+body{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.skip{font-size: 0;text-indent: -99999px;position: absolute;left: -99999px;}
+.center{max-width:900px; margin:auto; position: relative; padding: 0 20px; overflow: hidden;}
 ::selection{background: #fcc314;}
 
 /* header =============================================================================== */
@@ -10,8 +22,8 @@ header h1{position: relative; padding-top: 30px; }
 /* 네비게이션 */
 /* 1depth */
 header .gnb-nav{position: relative;}
-header .gnb-nav ul{position: absolute; left: 600px; top: -70px;}
-header .gnb-nav ul li{float: left; position: relative;}
+header .gnb-nav ul{float: left;}
+header .gnb-nav ul li{float: left;}
 header .gnb-nav ul li a{display: block; position: relative; font-size: 18px; font-weight: bold; margin: 0 75px 10px; color:#295BA7; height: 40px; line-height: 40px;text-align: center; perspective: 500px;}
 
 header .sub-nav{}
@@ -42,29 +54,36 @@ header .search-form{width: 200px; height: 55px; display: none;}
 /* section ===================================================================================== */
 section{}
 /* slide */
-section .swiper-container.swiper2{height: 460px; margin-top: 30px; margin-bottom: 40px;}
+section .swiper-container.swiper2{height: 470px; margin-top: 30px; margin-bottom: 40px;}
 section .swiper-wrapper{width: 1200px;}
 section .swiper-slide{}
-section .swiper-button-next, .swiper-button-prev i{
-  font-size: 40px; color: #fff;
-}
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next, .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
-  background-image: none;
-}
+section .swiper-button-next, .swiper-button-prev i{font-size: 40px; color: #fff;}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next, 
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{background-image: none;}
 section .swiper-slide img{height: 460px;}
 section .swiper-slide button{width: 150px; height: 50px; background: #fcc314; color: #fff;}
+.swiper-pagination-bullet{
+  width: 25px; height:25px;
+  background: none;
+  color:#000000;
+  line-height: 25px;
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active{
+  background: #ff7300;
+  color:#fff;
+  opacity: 1;
+}
 
 /* category */
-section .category{width: 100%; height: 390px; background: #295ba7; margin-bottom: 60px;}
-section .sub-category{float: left;}
-section .sub-category h3{text-align: center; color: #fcc314; margin: 30px 10px; padding-bottom: 10px;}
-section .sub-category .one{border-bottom: solid #fcc314; margin-bottom: 30px;}
-section .sub-category .two{border-bottom: solid #fcc314; margin-bottom: 30px;}
-section .sub-category .three{border-bottom: solid #fcc314; margin-bottom: 30px;}
-section .sub-category .four{border-bottom: solid #fcc314; margin-bottom: 30px;}
-section .sub-category .five{border-bottom: solid #fcc314; margin-bottom: 30px;}
-section .sub-category li{line-height: 35px;}
-section .sub-category li a{color: #fcc314;}
+section .category{width: 100%; height: 300px; background: #295ba7;}
+section .center{}
+section .center ul{float: left;}
+section .center ul li{}
+section .center ul li a{color: #fcc314;}
+section .center ul li > ul{}
+section .center ul li > ul li{}
+section .center ul li > ul li a{}
 
 /* map */
 section .map h2{position: relative; padding-bottom: 20px; color: #94AC3C;}
@@ -90,6 +109,10 @@ section .notice .not p{float: left; color: #295ba7; font-size: 16px; font-weight
 section .notice .not .not1{margin: 14px 20px;}
 section .notice .not .not2{float: right; margin: 14px 20px;}
 section .notice .not .text{margin: 14px 20px;}
+section .notice .notice-rol{height: 20px; width: 330px; overflow: hidden; padding-top: 14px;}
+section .notice .notice-rol li{}
+section .notice .notice-rol li a{color: #295ba7; font-weight: bold;}
+section .notice .notice-rol li a:hover{text-decoration: underline;}
 section .notice .not p a{padding: 0 5px; color: #295ba7;}
 
 /* 동영상 */
